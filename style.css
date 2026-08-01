@@ -69,6 +69,7 @@ html, body {
 
         @media (max-width: 600px) {
             .contact-grid { grid-template-columns: 1fr; }
+            .info-container { padding: 20px; }
         }
 
         .contact-card {
@@ -94,60 +95,25 @@ html, body {
             color: #4F77AA;
             text-decoration: none;
             font-weight: 600;
+            word-break: break-word;
         }
 
         .contact-card a:hover {
             text-decoration: underline;
         }
 
-        /* Kontaktivorm */
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            font-size: 0.95rem;
-            color: #2C2A29;
-        }
-
-        .form-group input,
-        .form-group textarea {
+        /* Responsiivne Google Form iframe */
+        .form-container {
             width: 100%;
-            padding: 12px 15px;
-            border: 1px solid #CCC;
-            border-radius: 10px;
-            font-family: inherit;
-            font-size: 1rem;
-            box-sizing: border-box;
-            background: #FFF;
-            transition: border-color 0.2s;
+            margin-top: 20px;
+            border-radius: 12px;
+            overflow: hidden;
         }
 
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #4F77AA;
-        }
-
-        .submit-btn {
-            background-color: #4F77AA;
-            color: white;
-            border: none;
-            padding: 14px 30px;
-            font-size: 1rem;
-            font-weight: bold;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: background 0.3s, transform 0.2s;
+        .form-container iframe {
             width: 100%;
-        }
-
-        .submit-btn:hover {
-            background-color: #3d5e87;
-            transform: translateY(-1px);
+            height: 860px;
+            border: 0;
         }
 
         .disclaimer-box {
